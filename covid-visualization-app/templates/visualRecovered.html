@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>
+        {{ country_name }}
+    </h1>
+    <img src="/recovered-{{country_name}}.png" alt="Image Placeholder" style="margin-bottom:10px;margin-left:10px;" height="500"/>
+    <form style="margin-bottom:10px" action="/api/coronavirus/recovered/projection/{{country_name}}", method="GET">
+        <input type="date" name="date" placeholder="date" />
+        <input type="submit" value="Search projected recovered cases" />
+    </form>
+    <form action="/", method="GET">
+        <input type="submit" value="Back to root">
+    </form>
+</body>
+</html>

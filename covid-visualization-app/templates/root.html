@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Root</title>
+</head>
+<body>
+    <h1>Welcome to the COVID-19 querying API for ITP 499</h1>
+    <p style="color:red;">{{ error }}</p>
+    <form style="margin-bottom:10px;" action="/redirect/confirmed", method="GET">
+        <input type="text" name="country_name" placeholder="country" />
+        <input type="submit" value="Search confirmed cases" />
+    </form>
+    <form style="margin-bottom:10px" action="/redirect/recovered" method="GET">
+        <input type="text" name="country_name" placeholder="country" />
+        <input type="submit" value="Search recovered cases" />
+    </form>
+</body>
+</html>
