@@ -1,6 +1,3 @@
-# Carson Mogush, cmogush@usc.edu
-# Fall 2020, Yoofi Quansah, Monday 6pm
-# Final Project
 import io
 from flask import Flask, redirect, render_template, request, session, url_for, send_file
 import os
